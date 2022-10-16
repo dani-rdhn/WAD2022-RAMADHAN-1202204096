@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+
+.main {
+    /* display: flex; */
+    /* background-color: lightblue; */
+    background-color: #fcfcfc;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
+}
+
+
+.text-1 h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.text-2 h2 {
+    font-size: 18px;
+}
+
+.main .row {
+    padding-top: 200px;
+    justify-content: center;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.main .video {
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.tentang {
+    /* display: flex; */
+    /* background-color: lightblue; */
+    background-color: #EEEEEE;
+    /* background-color: #EBECF0; */
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
+    padding-right: 164px;
+    padding-left: 164px;
+}
+
+.tentang .text-1 {
+    padding-top: 64px;
+    justify-content: center;
+    text-align: center;
+}
+
+.tentang .col {
+    padding-top: 12px;
+    padding-right: 32px;
+    padding-left: 32px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.lokasi {
+    /* display: flex; */
+    background-color: #fcfcfc;
+    /* background-color: #EBECF0; */
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
+    padding-right: 164px;
+    padding-left: 164px;
+}
+
+.lokasi .text-1 {
+    padding-top: 64px;
+    justify-content: center;
+    text-align: center;
+}
+
+.jenis {
+    background-color: #EEEEEE;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
+}
+
+/* .jenis .text-1 {
+    padding-top: 64px;
+    justify-content: center;
+    text-align: center;
+} */
+
+.jenis .row {
+    padding-top: 750px;
+    justify-content: center;
+    text-align: center;
+    /* top: 10%; */
+    left: 50%;
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    padding: 8px;
+}
+
+
+
+.card .mpv{
+    margin-top: 24px;
+    margin-bottom: 62px;
+}
+
+.card .suv{
+    /* margin-top: 24px; */
+    margin-bottom: 24px;
+}
+
+.card-body h5{
+    font-size: 24px;
+    padding-bottom: 12px;;
+}
+
+.card-body p{
+    font-size: 16px;
+    text-align: left;
+}
+
+.form-reservasi {
+    background-color: #FCFCFC;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
+    justify-content: center;
+
+}
+
+.form-reservasi .row {
+    padding-top: 82px;
+    justify-content: center;
+    /* text-align: center; */
+    /* top: 10%; */
+    left: 50%;
+    position: absolute;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.form-reservasi .text-1 {
+    left: 50%;
+    width: 100%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    padding-top: 96px;
+    
+}
+
+.form-reservasi form {
+    padding: 24px;
+    padding-top: 200px;
+    width: 50%;
+    padding-left: 100px;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+}
+
+
+.form-reservasi .btn {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.footer{
+    height: 10vh;
+    background-color: #EEEEEE;
+    text-align: center;
+
+}
+
+.footer button {
+    font-size: 16px;
+    padding-top: 24px;
+}
