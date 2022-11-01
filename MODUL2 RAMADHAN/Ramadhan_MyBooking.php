@@ -14,7 +14,7 @@
         <body>
         <?php
         // error_reporting(E_ERROR | E_PARSE);
-        $mobil = $_POST['Car'];
+        $mobil = $_POST['Cars'];
 
             $Total = 0;
 
@@ -64,7 +64,7 @@
                             <td><?= $_POST['Cars']; ?></td>
                             <td><?= $_POST['Phone']; ?></td>
                             <td><?= $_POST['inlineCheckboxOptions'] ?></td>
-                            <td><?php echo $Totale ?></td>
+                            <td><?php echo $Total ?></td>
                         </tr>
                     </tbody>
                 </table>

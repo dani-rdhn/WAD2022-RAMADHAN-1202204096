@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="col-7">
-                        <form action="Ramadhan_MyBooking.phps" method="post">
+                        <form action="Ramadhan_MyBooking.php" method="post">
                             <div class="row justify-content-between">
                     
                                 <div class="mb-2">
