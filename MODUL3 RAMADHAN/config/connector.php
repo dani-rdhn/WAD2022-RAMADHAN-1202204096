@@ -5,5 +5,6 @@ $connect = mysqli_connect("localhost", "root", "", "modul3");
 // } else {
 //     echo "Terkoneksi";
 // }
-session_start();
+$get_table = mysqli_query($connect, "SELECT * FROM showroom_ramadhan_table");
+$jumlah_mobil = mysqli_num_rows($get_table);
 ?>

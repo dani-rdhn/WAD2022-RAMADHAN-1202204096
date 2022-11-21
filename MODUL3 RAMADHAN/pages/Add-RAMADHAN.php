@@ -8,7 +8,7 @@
         <title>TP Praktikum WAD Modul 3</title>
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-        <link rel="stylesheet" href="style/AddItem.css">
+        <link rel="stylesheet" href="../style/AddItem.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
         crossorigin="anonymous">
@@ -19,7 +19,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 100px;">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="Index.php">Home</a>
+                            <a class="nav-link" href="./Home-Ramadhan.php">Home</a>
                         </li>
                         <li class="nav-item mx-4">
                             <a class="nav-link" href="#">MyCar</a>
@@ -31,7 +31,7 @@
         <section class="content">
             <p class="main-text">Tambah Mobil</p>
             <p class="sub-text">Tambah Mobil Baru Anda Ke List Show Room</p>
-            <form action="create.php" method="post" enctype="multipart/form-data">
+            <form action="../config/insert.php" method="POST" enctype="multipart/form-data">
                 <div class="row justify-content-between">
                     <div class="mb-3">
                         <label class="form-label">Nama Mobil</label>

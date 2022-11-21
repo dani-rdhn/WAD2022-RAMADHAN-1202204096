@@ -1,6 +1,7 @@
 <?php
  
-    include('config/connector.php'); 
+    include('connector.php');
+    // require 'connector.php'; 
 
     if(isset($_POST['proses'])) {
         $idmobil = rand(120000,130000);
@@ -11,7 +12,6 @@
         $deskripsi = $_POST['deskripsi'];
         $status = $_POST['status'];
         
-
         
         $gambar = $_FILES['gambar']['name'];
         $file_tmp = $_FILES['gambar']['tmp_name'];
@@ -32,5 +32,7 @@
             echo "<script>alert('Gagal ditambahkan')</script>";
             echo "<meta http-equiv='refresh' content='1 url=Index.php'>";
         }
+
+        header("Location:/WAD2022-RAMADHAN-1202204096/MODUL3%20RAMADHAN/pages/ListCar-RAMADHAN.php");
     }
 ?>

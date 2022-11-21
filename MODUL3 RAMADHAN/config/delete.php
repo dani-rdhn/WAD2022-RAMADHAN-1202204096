@@ -1,14 +1,13 @@
 <?php
-    include('config/connector.php');
-    if(isset($_GET['deleteid'])) {
-        $id=$_GET['deleteid'];
+    require '/connector.php';
 
-        $sql="DELETE FROM 'showroom_ramadhan_table' where id=$id_mobil";
-        $result=mysqli_query($connect, $sql);
-        if($result) {
-            echo "Deleted";
-        } else {
-            die(mysqli_error($connect));
-        }
+    if(isset($_POST["delete_car"])) {
+        $id = $_POST["id_mobil_hapus"];
+
+        $query = "DELETE FROM showroom_ramadhan_table WHERE id_mobil=$id";
+
+        $query_delete = mysqli_query($connect, $query);
     }
+
+    header("Location:/WAD2022-RAMADHAN-1202204096/MODUL3%20RAMADHAN/pages/ListCar-RAMADHAN.php");
 ?>
