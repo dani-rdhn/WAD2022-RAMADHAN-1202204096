@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect("localhost", "root", "", "modul3");
+$connect = mysqli_connect("localhost", "root", "", "modul3", 3307);
 // if(!$connect) {
 //     die("Tidak terkoneksi");
 // } else {

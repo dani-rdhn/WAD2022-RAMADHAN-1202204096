@@ -56,6 +56,7 @@
                                     <input type="hidden" name="id_mobil_hapus" value="<?php echo $row['id_mobil']?>">
                                     <input type="submit" name="delete_car" value="Delete" class="btn btn-danger rounded-pill">
                                 </form>
+                                <!-- <a href="Detail-RAMADHAN.php?id_mobil='.$row['id_mobil'].'" class="btn btn-primary"></a> -->
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 <?php
-    require '/connector.php';
+    include('connector.php');
 
     if(isset($_POST["delete_car"])) {
         $id = $_POST["id_mobil_hapus"];

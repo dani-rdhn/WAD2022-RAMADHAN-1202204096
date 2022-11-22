@@ -28,7 +28,7 @@
                             <a class="nav-link" href="./ListCar-RAMADHAN.php">MyCar</a>
                         </li>
                     </ul>
-                </div>
+                </div> 
             </nav>
         </section>
         <section class="content">
@@ -38,17 +38,17 @@
 
                     <?php
                         $id_detail = $_POST["id_mobil_detail"];
+                        // $id_mobil = $_GET['id_mobil'];
 
                         $getdata = "SELECT * FROM showroom_ramadhan_table ORDER BY id_mobil";
+                        // $getdata = "SELECT * FROM showroom_ramadhan_table WHERE id_mobil='$id_mobil'";
                         $get = mysqli_query($connect, $getdata);
 
-                        // make gloabl variable for data
                         global $nama_mobil;
                         global $pemilik_mobil;
                         global $merk_mobil;
                         global $deskripsi;
-
-                        // membuat array data
+                        
                         while($row = mysqli_fetch_array($get)) {
                             $nama_mobil = $row["nama_mobil"];
                             $pemilik_mobil = $row["pemilik_mobil"];
@@ -58,6 +58,16 @@
                             $foto = $row["foto_mobil"];
                             $status = $row["status_pembayaran"];
                         }
+
+                        // while($row = mysqli_fetch_assoc($get)) {
+                        //     $nama_mobil = $row["nama_mobil"];
+                        //     $pemilik_mobil = $row["pemilik_mobil"];
+                        //     $merk_mobil = $row["merk_mobil"];
+                        //     $tanggal = $row["tanggal_beli"];
+                        //     $deskripsi = $row["deskripsi"];
+                        //     $foto = $row["foto_mobil"];
+                        //     $status = $row["status_pembayaran"];
+                        // }
                                 
                     ?>
 

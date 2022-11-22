@@ -27,12 +27,10 @@
 
         if($query_value) {
             echo "<script>alert('Data telah ditambahkan')</script>";
-            echo "<meta http-equiv='refresh' content='1 url=Index.php'>";
+            echo "<meta http-equiv='refresh' content='1 url=../pages/ListCar-RAMADHAN.php'>";
         } else {
             echo "<script>alert('Gagal ditambahkan')</script>";
-            echo "<meta http-equiv='refresh' content='1 url=Index.php'>";
+            echo "<meta http-equiv='refresh' content='1 url=../pages/Home-RAMADHAN.php'>";
         }
-
-        header("Location:/WAD2022-RAMADHAN-1202204096/MODUL3%20RAMADHAN/pages/ListCar-RAMADHAN.php");
     }
 ?>
