@@ -1,0 +1,73 @@
+/* .container-header p{
+    padding-top:6px;
+    color:gray;
+}
+
+.container-home {
+    padding-top:10px;
+}
+
+.home p{
+    font-weight:bold;
+} */
+.body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    /* height: 100vh;
+    width: 70%; */
+    display: flex;
+    flex-direction: row;
+    /* padding-left: 100px;
+    padding-top: 100px;
+    padding-right: 100px;
+    font-family: Raleway;
+    justify-content: center;
+    align-items: center; */
+}
+
+.left {
+    background-image: url("../asset/image/backgroundMobil.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.right {
+    padding-left: 100px;
+    /* padding-top: 24px; */
+    padding-right: 100px;
+}
+
+.left,
+.right {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .content .main-text {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.content .sub-text {
+    font-size: 16px;
+    color: #757575;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+}
+
+.nama {
+    margin-top: 48px;
+    margin-left: 24px;
+} */
+
