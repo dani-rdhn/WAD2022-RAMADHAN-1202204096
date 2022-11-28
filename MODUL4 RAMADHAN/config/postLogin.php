@@ -9,7 +9,11 @@
     if(isset($_POST['submit'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
-        // $check = $_POST['check'];
+        if(isset($_POST['check'])) {
+            $check = TRUE;
+        } else {
+            $check = FALSE;
+        }
         
         $dt_email = "SELECT * FROM user_ramadhan WHERE email = '$email' && password='$password'";
 

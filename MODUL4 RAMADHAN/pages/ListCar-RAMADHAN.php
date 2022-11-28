@@ -27,11 +27,11 @@
                             <a class="nav-link" href="">MyCar</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ms-auto" style="margin-right: 90px;">
-                        <li class="nav-item mx-4">
+                    <ul class="navbar-nav ms-auto" style="margin-right: 110px;">
+                        <li class="nav-item mx-1">
                             <a href="Add-RAMADHAN.php" class="btn btn-light" type="button">Add Car</a>
                         </li>
-                        <li class="nav-item mx-4">
+                        <li class="nav-item mx-1">
                             <a href="Profile-RAMADHAN.php" class="btn btn-light" type="button">Profile</a>
                         </li>
                     </ul>

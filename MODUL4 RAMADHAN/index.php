@@ -1,5 +1,6 @@
 <?php 
     require 'config/conn.php';
+    require 'config/connector.php';
     // require 'config/session.php';
     if(!isset($_SESSION)) {
     session_start();
@@ -34,13 +35,14 @@
                     <ul class="navbar-nav ms-auto" style="margin-right: 100px;">
                         <li class="nav-item mx-4">
                             <?php 
-                                if(isset($_SESSION['id'])) {
-                                    echo "<a href='pages/ListCar-RAMADHAN.php'>List Car</a>";
-                                } else {
-                                    echo "<a href='pages/Login-RAMADHAN.php'>Login</a>";
-                                }
+                                // if(isset($_SESSION['id'])) {
+                                //     echo "<a href='pages/ListCar-RAMADHAN.php'>List Car</a>";
+                                // } else {
+                                //     echo "<a href='pages/Login-RAMADHAN.php'>Login</a>";
+                                // }
                             ?>
                             <a href='pages/Login-RAMADHAN.php' class="btn btn-light" type="button">Login</a>
+                            <a href='../config/logout.php' class="btn btn-light" type="button">Logout</a>
                         </li>
                     </ul>
                 </div>

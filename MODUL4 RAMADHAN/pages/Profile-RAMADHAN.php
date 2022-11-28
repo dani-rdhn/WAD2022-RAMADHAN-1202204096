@@ -28,46 +28,17 @@ include('../config/conn.php');
                             <a class="nav-link" href="">MyCar</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ms-auto" style="margin-right: 90px;">
-                        <li class="nav-item mx-4">
+                    <ul class="navbar-nav ms-auto" style="margin-right: 120px;">
+                        <li class="nav-item mx-1">
                             <a href="Add-RAMADHAN.php" class="btn btn-light" type="button">Add Car</a>
                         </li>
-                        <li class="nav-item mx-4">
+                        <li class="nav-item mx-1">
                             <a href="Profile-RAMADHAN.php" class="btn btn-light" type="button">Profile</a>
                         </li>
                     </ul>
                 </div>
             </nav>
     </section>
-    <!-- <nav id="main-navbar" class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.php">EAD TRAVEL</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="nav navbar-right">
-        <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active mr-3">
-                    <a class="nav-link" href="Bookings.php"><i class="fa fa-shopping-cart" style="font-size:22px"></i></a>
-                </li>
-                <li class="nav-item active mr-3">
-                    <div class="dropdown">
-                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Selamat Datang, <font class="text-primary"><?php echo $_SESSION['nama']?></font>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Profile</a>
-                            <a class="dropdown-item" href="logout.php">Log Out</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-  </div>
-</nav> -->
 
     <div class="container my-3">
         <div class="card centered mx-auto" style="width: 70%;">

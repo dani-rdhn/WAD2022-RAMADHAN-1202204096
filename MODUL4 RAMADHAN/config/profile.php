@@ -20,7 +20,8 @@ if (isset($_POST['update'])) {
     
     if ($_POST['confirm_password'] == $_POST['password']){
         try {
-            $sql = "UPDATE users SET nama='$nama', email='$email', No_hp='$no_hp', password='$pw' WHERE email='$email'";            $st = $Koneksi->prepare($sql);
+            $sql = "UPDATE users SET nama='$nama', email='$email', No_hp='$no_hp', password='$pw' WHERE email='$email'";            
+            $st = $Koneksi->prepare($sql);
             $st->execute();            
             header('Refresh:2');
             echo '<div class="alert alert-warning" role="alert">';

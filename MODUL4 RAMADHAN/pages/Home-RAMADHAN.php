@@ -1,6 +1,7 @@
 <?php
 // $connect = mysqli_connect("localhost", "root", "", "modul3",3307);
 require 'config/conn.php';
+require 'config/connector.php';
 // session_start();
 if(!isset($_SESSION)) {
     session_start();
