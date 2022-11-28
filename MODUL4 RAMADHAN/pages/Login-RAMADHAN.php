@@ -20,13 +20,14 @@
     </head>
 
     <?php if(isset($_SESSION['message'])) : ?>
-        <div class="alert alert-success alert-dismissible fade show fade in" role="alert">
-            <?= $_SESSION['message'] ?>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+            <div class="alert alert-success alert-dismissible fade show fade in" role="alert">
+                <?= $_SESSION['message'] ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
     <?php 
         unset($_SESSION['message']);
-    endif; ?>
+        endif; 
+    ?>
 
     <body>
         <section class="content">
@@ -60,17 +61,7 @@
                     </div>
                 </form>
                 <?php
-                //  if(isset($_POST['submit'])) {
-                //     $email = $_POST['email'];
-                //     $password = $_POST['password'];
-                //     // $check = $_POST['check'];
-                    
-                //     $dt_username = "SELECT * FROM user_ramadhan WHERE email = '$email'";
 
-                //     $exeQuery = mysqli_query($connectLogin, $dt_username);
-                //     $count = mysqli_num_rows($exeQuery);
-                //     echo $count;
-                //  }
                 ?>
             </div>
         </section>

@@ -1,7 +1,10 @@
 <?php
 // $connect = mysqli_connect("localhost", "root", "", "modul3",3307);
 require 'config/conn.php';
-session_start();
+// session_start();
+if(!isset($_SESSION)) {
+    session_start();
+}
 
 ?>
 
@@ -22,7 +25,7 @@ session_start();
         <section class="content">
                 <div class="row justify-content-center mx-auto d-flex align-items-center">
                     <div class="col">
-                        <p class="main-text">Selamat Datang di Show Room</p>
+                        <p class="main-text">Selamat Datang di Show Room, <?= $_SESSION['email']; ?></p>
                         <?
                         // php echo $row["id"]; 
                         ?>

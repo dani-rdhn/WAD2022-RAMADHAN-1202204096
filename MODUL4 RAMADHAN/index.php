@@ -1,4 +1,10 @@
-<?php require 'config/connector.php' ?>
+<?php 
+    require 'config/conn.php';
+    // require 'config/session.php';
+    if(!isset($_SESSION)) {
+    session_start();
+    }
+?>
 
 <html>
     <head>

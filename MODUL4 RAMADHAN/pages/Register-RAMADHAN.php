@@ -29,7 +29,6 @@
             <div class="left">
             </div>
             <div class="right">
-                
                 <form action="../config/postRegister.php" method="POST">
                     <div class="row justify-content-between">
                         <h2 style="margin-bottom: 24px;">Register</h2>
