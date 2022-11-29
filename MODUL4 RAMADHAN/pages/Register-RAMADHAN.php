@@ -1,6 +1,6 @@
         <?php
             // include('../config/connector.php');
-            session_start();
+            ();
         ?>
 
         <!DOCTYPE html>
