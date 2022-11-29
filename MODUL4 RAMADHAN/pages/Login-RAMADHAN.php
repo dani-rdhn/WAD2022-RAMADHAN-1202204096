@@ -19,7 +19,7 @@
                 $user = mysqli_fetch_array($hasil);
                 if ($user) {
                     if (isset($_POST['remember'])) {
-                            ('suser_login', $_POST['email'], time() + (3600 * 24));
+                            setcookie('user_login', $_POST['email'], time() + (3600 * 24));
                             setcookie('user_passwords', $_POST['pw'], time() + (3600 * 24));
                             $_SESSION['email'] = $email;
                             header('Location:../index.php');

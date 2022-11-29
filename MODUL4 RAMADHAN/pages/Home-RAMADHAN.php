@@ -3,7 +3,7 @@
         // require 'config/conn.php';
         // require 'config/connector.php';
         // session_start();
-        if(!isset()) {
+        if(!isset($_SESSION)) {
             session_start();
         }
 
