@@ -31,7 +31,8 @@
         <section class="content">
             <p class="main-text">Tambah Mobil</p>
             <p class="sub-text">Tambah Mobil Baru Anda Ke List Show Room</p>
-            <form action="../config/insert.php" method="POST" enctype="multipart/form-data">
+            <form action="/product" method="POST" enctype="multipart/form-data">
+                @csrf
                 <div class="row justify-content-between">
                     <div class="mb-3">
                         <label class="form-label">Nama Mobil</label>
@@ -55,7 +56,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="formFileDisabled" class="form-label">Foto</label>
-                        <input class="form-control" type="file" id="formFileDisabled" name="gambar">
+                        <input class="form-control" type="file" id="formFileDisabled" name="img_path">
                     </div>
                     <span style="font-weight:bold;">Status Pembayaran</span>
                     <div class="mb-3">
