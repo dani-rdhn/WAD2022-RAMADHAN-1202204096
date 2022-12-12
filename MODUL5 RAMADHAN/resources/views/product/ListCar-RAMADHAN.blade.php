@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TP Praktikum WAD Modul 4</title>
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-        <link rel="stylesheet" href="{{ asset('/css/itemdetail.css') }}">
+        <link rel="stylesheet" href="{{ asset('/css/myitem.css') }}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
         crossorigin="anonymous">
@@ -43,7 +43,6 @@
             <p class="sub-text">Tambah Mobil Baru Anda Ke List Show Room</p>
             <div class="container">
                 <div class="row">
-                    <p>{{$loop->iteration}}</p>
                     @foreach ($products as $prod)
                     <div class="col-4">
                         <div class="card">
@@ -53,7 +52,7 @@
                                 <p class="card-text">{{$prod->description}}</p>
                             </div>
                             <div class="container-fluid row">
-                                <form action="/product/{{$prod-> id}}" method="POST" enctype="multipart/form-data" class="col">
+                                <form action="/product/{{$prod-> id}}" class="col">
                                     <input type="hidden" name="id_mobil_detail" value="">
                                     <input type="submit" name="detail_car" value="Detail" class="btn btn-primary rounded-pill">
                                 </form>

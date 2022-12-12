@@ -9,8 +9,16 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products=Product::orderBy('id', 'desc') ->get();
-        return view('product.ListCar-RAMADHAN')->with('products', $products);
+        // $products=Product::orderBy('id', 'desc') ->get();
+        $products=Product::all();
+        return view('product.ListCar-RAMADHAN', compact('products'));
+        // return 'test';
+    }
+
+    public function show($id)
+    {
+        $products = Product::find($id);
+        return view('product.Detail-RAMADHAN', compact('products'));
     }
 
     public function create()
@@ -43,7 +51,7 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::find($id);
-        return view('product.edit', compact('product'));
+        return view('product.Edit-RAMADHAN', compact('product'));
     }
 
     public function update(Request $request, $id)
@@ -67,12 +75,12 @@ class ProductController extends Controller
             'image' => $imgName
         ]);
 
-        return redirect('/product');
+        return redirect('/Update');
     }
 
     public function destroy($id)
     {
         Product::find($id)->delete();
-        return redirect('/product');
+        return redirect('/Listcar');
     }
 }

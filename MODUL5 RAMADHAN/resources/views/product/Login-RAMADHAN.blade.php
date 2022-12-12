@@ -1,41 +1,3 @@
-<?php
-// session_start();
-// include '../config/conn.php';
-
-// // if (isset($_COOKIE['user_login'])) {
-// //      $cek = $_COOKIE['user_login'];
-// //      $_SESSION[$cek];
-// // };
-
-// if (isset($_SESSION['email'])) {
-//      header("Location: ../index.php");
-//      exit;
-// }
-// if (isset($_POST['submit'])) {
-//      if (!empty($_POST['email']) && !empty($_POST['pw'])) {
-//           $email = $_POST['email'];
-//           $password = $_POST['pw'];
-//           $hasil = mysqli_query($connectLogin, "SELECT * FROM user_ramadhan where email = '$email' and password = '$password'");
-//           $user = mysqli_fetch_array($hasil);
-//           if ($user) {
-//                if (isset($_POST['remember'])) {
-//                     setcookie('user_login', $_POST['email'], time() + (3600 * 24));
-//                     setcookie('user_password', $_POST['pw'], time() + (3600 * 24));
-//                     $_SESSION['email'] = $email;
-//                     header('Location:../index.php');
-//                } elseif (!isset($_POST['remember'])) {
-//                     $_SESSION['email'] = $email;
-//                     header('Location:../index.php');
-//                }
-//           } else {
-//                $eror = 'Email atau password salah';
-//           }
-//      } else {
-//           $eror = 'Kedua kolom harus diisi';
-//      }
-// }
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,11 +26,11 @@
                         <h2 style="margin-bottom: 24px;">Login</h2>
                         <div class="mb-3">
                             <label class="form-label">Email</label>
-                            <input class="form-control" id="email" name='email' value="<?php if(isset($_COOKIE['user_login'])) { echo $_COOKIE['user_login']; } ?>">
+                            <input class="form-control" id="email" name='email' value="">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name='pw' value="<?php if(isset($_COOKIE['user_password'])) { echo $_COOKIE['user_password']; } ?>">
+                            <input type="password" class="form-control" id="password" name='pw' value="">
                         </div>
                         <div class="text-danger"><?php if (isset($eror)) {
                                                   echo $eror;

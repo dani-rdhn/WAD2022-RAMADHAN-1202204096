@@ -1,7 +1,3 @@
-<?php
-    // include('../config/connector.php');
-    session_start();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,9 +18,8 @@
             <div class="left">
             </div>
             <div class="right">
-                <form action="{{ route('simpanregistrasi') }}" method="POST">
-                    <!-- @csrf -->
-                    {{ csrf_field() }}
+                <form action="{{ route('register.action') }}" method="POST">
+                    @csrf
                     <div class="row justify-content-between">
                         <h2 style="margin-bottom: 24px;">Register</h2>
                         <div class="mb-3">
@@ -33,23 +28,24 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Nama</label>
-                            <input class="form-control" id="nama" name='nama'>
+                            <input class="form-control" id="name" name='name'>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Nomor Handphone</label>
-                            <input class="form-control" id="noHp" name='noHp'>
+                            <input class="form-control" id="noHp" name='no_hp'>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Kata Sandi</label>
-                            <input class="form-control" type="password" id="sandi" name='sandi' onkeyup="check();" required>
+                            <input class="form-control" type="password" id="sandi" name='password' onkeyup="check();" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Konfirmasi Kata Sandi</label>
-                            <input class="form-control" type="password" id="konfirmasiSandi" name='konfirmasiSandi' onkeyup="check();" required>
+                            <input class="form-control" type="password" id="konfirmasiSandi" name='password_confitmation' onkeyup="check();" required>
                         </div>
                         <div class="mb-2">
                             <!-- <a href="Ramadhan_MyBooking.php" class="btn btn-primary w-100">Submit</a> -->
-                            <button type="submit" class="btn btn-primary" name="submit" style="margin-top: 24px;">Selesai</button>
+                            <!-- <button type="submit" class="btn btn-primary" name="submit" style="margin-top: 24px;">Selesai</button> -->
+                            <a class="btn btn-primary" href="{{ route('product.index') }}">Selesai</a>
                         </div>
                         <p>Anda sudah punya akun? <a href="/login">Login</a></p>
                     </div>
