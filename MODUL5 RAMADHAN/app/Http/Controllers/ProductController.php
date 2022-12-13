@@ -26,7 +26,7 @@ class ProductController extends Controller
         return view('product.Add-RAMADHAN');
     }
 
-    public function store(Request $request)
+    public function stored(Request $request)
     {
         $imgName = $request->img_path->getClientOriginalName() . '-' . time()
                     . '.' . $request->img_path->extension();

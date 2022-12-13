@@ -35,7 +35,7 @@ Route::get('/Home-page', function() {
     return view('product.Home-RAMADHAN');
 });
 
-Route::get('/Home', function() {
+Route::get('/Homes', function() {
     return view('product.index');
 });
 
